@@ -1,0 +1,5 @@
+﻿  Rebuid task 3.3.c
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Rebuid task 3.3\Rebuid task 3.3\Rebuid task 3.3.c(102,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Rebuid task 3.3\Rebuid task 3.3\Rebuid task 3.3.c(109,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Rebuid task 3.3\Rebuid task 3.3\Rebuid task 3.3.c(115,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Rebuid task 3.3.vcxproj -> C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Rebuid task 3.3\Debug\Rebuid task 3.3.exe
