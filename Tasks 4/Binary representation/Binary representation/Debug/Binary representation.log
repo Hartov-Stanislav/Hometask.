@@ -1,0 +1,6 @@
+﻿  Binary representation.c
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Binary representation\Binary representation\Binary representation.c(88,43): warning C4020: unpacking: слишком много фактических параметров
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Binary representation\Binary representation\Binary representation.c(92,45): warning C4020: unpacking: слишком много фактических параметров
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Binary representation\Binary representation\Binary representation.c(84,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Binary representation\Binary representation\Binary representation.c(85,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Binary representation.vcxproj -> C:\Users\Ideapad\Desktop\Hometask_new\Task-4\Binary representation\Debug\Binary representation.exe
