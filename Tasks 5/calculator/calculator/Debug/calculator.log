@@ -1,0 +1,10 @@
+﻿  Calculator.c
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(31,14): warning C4047: return: "int" отличается по уровням косвенного обращения от "void *"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(44,14): warning C4098: delete: функция типа "void", возвращающая значение
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(72,14): warning C4047: return: "int" отличается по уровням косвенного обращения от "void *"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(74,51): warning C4047: =: "int" отличается по уровням косвенного обращения от "int *"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(101,14): warning C4133: функция: несовместимые типы - из "StackElement **" в "ListElement **"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(106,36): warning C4133: функция: несовместимые типы - из "StackElement **" в "ListElement **"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(110,28): warning C4133: функция: несовместимые типы - из "StackElement *" в "ListElement *"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(76): warning C4715: plus: значение возвращается не при всех путях выполнения
+  calculator.vcxproj -> C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\Debug\calculator.exe
