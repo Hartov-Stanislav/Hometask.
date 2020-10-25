@@ -65,49 +65,140 @@ void deleteStack(ListElement** head)
 }
 
 // Функция сложения
-int plus(ListElement** head)
+ListElement* plus(ListElement** head)
 {
 	if (*head == NULL)
 	{
 		return NULL;
 	}
-	(*head)->value = &(*head)->value + (*head)->value;
-	deleteElement(head);
+	if ((*head)->next == NULL)
+	{
+		return NULL;
+	}
+	(*head)->next->value = (*head)->next->value + (*head)->value;
+	ListElement*newHead = (*head)->next;
+	free(*head);
+	return newHead;
+}
+
+ListElement* minus(ListElement** head)
+{
+	if (*head == NULL)
+	{
+		return NULL;
+	}
+	if ((*head)->next == NULL)
+	{
+		return NULL;
+	}
+	(*head)->next->value =(*head)->next->value -(*head)->value;
+	ListElement* newHead = (*head)->next;
+	free(*head);
+	return newHead;
+}
+
+ListElement* multiplication(ListElement** head)
+{
+	if (*head == NULL)
+	{
+		return NULL;
+	}
+	if ((*head)->next == NULL)
+	{
+		return NULL;
+	}
+	(*head)->next->value = (*head)->next->value * (*head)->value;
+	ListElement* newHead = (*head)->next;
+	free(*head);
+	return newHead;
+}
+
+ListElement* division(ListElement** head)
+{
+	if (*head == NULL)
+	{
+		return NULL;
+	}
+	if ((*head)->next == NULL)
+	{
+		return NULL;
+	}
+	(*head)->next->value = (*head)->next->value / (*head)->value;
+	ListElement* newHead = (*head)->next;
+	free(*head);
+	return newHead;
 }
 
 int main()
 {
 	printf("Please, enter sequence of numbers and arithmetic signs({+} {-} {*} {/})\n");
 	printf("If you want to see result, please enter (=)\n");
+	// Место где хранится запись
 	char sequence[MAX];
-	struct StackElement* head = NULL;
-	fgets(sequence, MAX, stdin);
+	struct ListElement* head = NULL;
+	// Получение записи
+	fgets(sequence, MAX, stdin);	
 	for (int i = 0; i < MAX; i++)
 	{
-		char temp;
+		int balanceOfSigns = 0;
+		int temp;
 		switch (sequence[i])
 		{
 		case' ':
 			break;
-		case'М':
-			return 0;
-		case'\n':
-			break;
 		case'*':
+			balanceOfSigns++;
+			if (balanceOfSigns < 0)
+			{
+				printf("wrong data");
+				return 0;
+			}
+			head = multiplication(&head);
 			break;
-		case'/': 
+		case'/':
+			balanceOfSigns++;
+			if (balanceOfSigns < 0)
+			{
+				printf("wrong data");
+				return 0;
+			}
+			temp = deleteElement(&head);
+			if (temp == 0)
+			{
+				printf("wrong data (division by zero)\n");
+				return 0;
+			}
+			addNewElementInList(head, temp);
+			head = division(&head);
 			break;
-		case'+': 
-			plus(&head);
+		case'+':
+			balanceOfSigns++;
+			if (balanceOfSigns >= 0)
+			{
+				printf("wrong data");
+				return 0;
+			}
+			head = plus(&head);
 			break;
 		case'-':
+			head = minus(&head);
 			break;
 		case'=':
-			printf("%d", deleteElement(&head));
+			temp = deleteElement(&head);
+			if (isEmpty(head))
+			{
+				printf("%d", temp);
+				return 0;
+			}
+			else
+			{
+				printf("wrong data\n");
+				deleteStack(&head);
+				return 0;
+			}
 			break;
-		default: 
-			temp = sequence[i] - '0';
-			addNewElementInList(head, temp);
+		default:
+			head = addNewElementInList(head, sequence[i]- 48);
 			break;
 		}
 	}

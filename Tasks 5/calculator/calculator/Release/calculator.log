@@ -1,0 +1,9 @@
+﻿  Calculator.c
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(31,14): warning C4047: return: "int" отличается по уровням косвенного обращения от "void *"
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\calculator\Calculator.c(44,14): warning C4098: delete: функция типа "void", возвращающая значение
+  Создание кода
+  1 of 13 functions ( 7.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  calculator.vcxproj -> C:\Users\Ideapad\Desktop\Hometask\Tasks 5\calculator\Release\calculator.exe
