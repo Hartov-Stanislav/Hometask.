@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\Ideapad\Desktop\Hometask\Tasks 5\Balance of brackets\Balance of brackets\Source.c(30,14): warning C4047: return: "int" отличается по уровням косвенного обращения от "void *"
+  Balance of brackets.vcxproj -> C:\Users\Ideapad\Desktop\Hometask\Tasks 5\Balance of brackets\Debug\Balance of brackets.exe
